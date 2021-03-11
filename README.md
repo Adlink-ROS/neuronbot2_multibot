@@ -13,7 +13,7 @@ TF tree:
 ```bash
 mkdir -p ~/nb2_swarm_ws/src
 cd ~/nb2_swarm_ws/
-wget nb2_swarm.repos
+wget https://raw.githubusercontent.com/Adlink-ROS/neuronbot2_multibot/melodic-devel/nb2_swarm.repos
 vcs import < nb2_swarm.repos
 rosdep install --from-path src --ignore-src -r -y --rosdistro melodic
 ```
