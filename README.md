@@ -9,6 +9,9 @@ Rviz view:
 TF tree:
 ![](readme_resource/tf_tree.png)
 
+Video demo:
+https://www.youtube.com/watch?v=KfzoqO9HJKs
+
 ## Download and install dependencies
 ```bash
 mkdir -p ~/nb2_swarm_ws/src
