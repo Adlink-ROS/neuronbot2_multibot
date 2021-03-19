@@ -19,6 +19,8 @@ mkdir -p ~/nb2_swarm_ws/src
 cd ~/nb2_swarm_ws/
 wget https://raw.githubusercontent.com/Adlink-ROS/neuronbot2_multibot/melodic-devel/nb2_swarm.repos
 vcs import src < nb2_swarm.repos
+sudo apt update
+rosdep update
 rosdep install --from-path src --ignore-src -r -y --rosdistro melodic
 ```
 
