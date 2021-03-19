@@ -29,11 +29,18 @@ cd ~/nb2_swarm_ws/
 catkin_make
 ```
 
-## Run NeuronBot2 multibot
+## Run NeuronBot2 multibot in gazebo
 ```bash
 source /opt/ros/melodic/setup.bash
 source ~/nb2_swarm_ws/devel/setup.bash
-roslaunch neuronbot2_multibot start.launch
+roslaunch neuronbot2_multibot gazebo_start.launch
+```
+
+## See multibot in Rviz view
+```bash
+source /opt/ros/melodic/setup.bash
+source ~/nb2_swarm_ws/devel/setup.bash
+roslaunch neuronbot2_multibot multibot_view.launch
 ```
 
 Note:
