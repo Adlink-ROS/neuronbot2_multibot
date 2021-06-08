@@ -17,30 +17,30 @@ https://www.youtube.com/watch?v=KfzoqO9HJKs
 ```bash
 mkdir -p ~/nb2_swarm_ws/src
 cd ~/nb2_swarm_ws/
-wget https://raw.githubusercontent.com/Adlink-ROS/neuronbot2_multibot/melodic-devel/nb2_swarm.repos
+wget https://raw.githubusercontent.com/Adlink-ROS/neuronbot2_multibot/noetic-devel/nb2_swarm.repos
 vcs import src < nb2_swarm.repos
 sudo apt update
 rosdep update
-rosdep install --from-path src --ignore-src -r -y --rosdistro melodic
+rosdep install --from-path src --ignore-src -r -y --rosdistro noetic
 ```
 
 ## Build code
 ```bash
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 cd ~/nb2_swarm_ws/
 catkin_make
 ```
 
 ## Run NeuronBot2 multibot in gazebo
 ```bash
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 source ~/nb2_swarm_ws/devel/setup.bash
 roslaunch neuronbot2_multibot gazebo_start.launch
 ```
 
 ## See multibot in Rviz view
 ```bash
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 source ~/nb2_swarm_ws/devel/setup.bash
 roslaunch neuronbot2_multibot multibot_view.launch
 ```
