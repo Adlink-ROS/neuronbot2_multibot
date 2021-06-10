@@ -15,3 +15,7 @@ repositories:
     type: git
     url: https://github.com/Adlink-ROS/neuronbot2_multibot.git
     version: noetic-devel
+  robot_state_publisher:
+    type: git
+    url: https://github.com/Adlink-ROS/robot_state_publisher.git
+    version: noetic-devel

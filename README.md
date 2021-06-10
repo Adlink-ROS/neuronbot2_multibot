@@ -39,6 +39,7 @@ roslaunch neuronbot2_multibot gazebo_start.launch
 ```
 
 ## See multibot in Rviz view
+Open another terminal, follow below instructions.
 ```bash
 source /opt/ros/noetic/setup.bash
 source ~/nb2_swarm_ws/devel/setup.bash
@@ -46,6 +47,6 @@ roslaunch neuronbot2_multibot multibot_view.launch
 ```
 
 Note:
-1. If it's your first time to run start.launch, it may take few minutes to download gazebo model.
+1. If it's your first time to run gazebo_start.launch, it may take few minutes to download gazebo model.
 
 2. Running this example in Gazebo simulation requires a little bit high computing power, Intel Core i5/i7 CPU is recommended.
